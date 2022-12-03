@@ -256,7 +256,7 @@ import scipy, numpy, matplotlib
 modules = [numpy, matplotlib, scipy]
 row = "<tr> <td>%s</td> <td>%s</td> </tr>"
 rows = "\n".join([row % (module.__name__, module.__version__) for module in modules])
-s = "<table> <tr><th>Library</th><th>Version</th> </tr> %s</table>" % rows
+s = f"<table> <tr><th>Library</th><th>Version</th> </tr> {rows}</table>"
 
 
 # In[36]:
